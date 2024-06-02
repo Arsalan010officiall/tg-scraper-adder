@@ -34,21 +34,21 @@ async def add_to_group(client, target_group_username, usernames):
 
 async def main():
     # Your Telegram API credentials
-    api_id = 'your_api_id'
-    api_hash = 'your_api_hash'
-    phone_number = 'your_phone_number'
+    api_id = '15460762'
+    api_hash = '9e2dba9192c637cbe850b3207f067f9e'
+    phone_number = '+17023234926'
 
     # Login and save the session
     client = await login_and_save(api_id, api_hash, phone_number)
 
     # Group to scrape usernames from
-    group_username = 'group_username'
+    group_username = 'Arslan_MD'
 
     # Scrape usernames from the group
     scraped_usernames = await scrape_usernames(client, group_username)
 
     # Group to add scraped usernames to
-    target_group_username = 'target_group_username'
+    target_group_username = 'Random'
 
     # Add scraped usernames to the target group
     await add_to_group(client, target_group_username, scraped_usernames)
